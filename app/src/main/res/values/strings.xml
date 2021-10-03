@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">KuisionerKu</string>
+
+    <string name="nol">0</string>
+    <string name="reset">Reset</string>
+    <string name="submit">Submit</string>
+    <string name="tingkatkecanduantinggi">Tingkat kecanduan tinggi</string>
+    <string name="tingkatkecanduanrendah">Tingkat kecanduan rendah</string>
+    <string name="genderkosong">Gender Kosong</string>
+
+    <!--GENDER-->
+    <string name="pertanyaangender">Silahkan masukan gender anda :</string>
+    <string name="pria">Pria</string>
+    <string name="wanita">Wanita</string>
+    
+    <!--BAGIAN 3-->
+    <string name="bg3no1">Saya kehilangan rencana aktivitas disebabkan oleh penggunaan smartphone / handphone.</string>
+    <string name="bg3no2">Saya kesulitan konsentrasi menjalankan aktivitas sehari-hari, sedang melakukan tugas atau sedang bekerja disebabkan penggunaan smartphone / handphone.</string>
+    <string name="bg3no3">Saya merasa nyeri di pergelangan tangan atau bagian belakang leher selama menggunakan smartphone / handphone.</string>
+    <string name="bg3no4">Saya tidak bisa bertahan karena tidak memiliki smartphone / handphone.</string>
+    <string name="bg3no5">Saya merasa tidak sabaran dan resah saat saya tidak memegang smartphone / handphone saya.</string>
+    <string name="bg3no6">Saya memikirkan smartphone / handphone saya walaupun sedang tidak menggunakannya.</string>
+    <string name="bg3no7">Saya tidak akan berhenti menggunakan smartphone / handphone saya walaupun kehidupan harian saya telah terpengaruh karenanya.</string>
+    <string name="bg3no8">Saya mengecek secara konstan smartphone / handphone saya.</string>
+    <string name="bg3no9">Saya menggunakan smartphone / handphone lebih lama dari yang saya inginkan.</string>
+    <string name="bg3no10">Orang-orang disekitar saya mengatakan bahwa saya menggunakan smartphone / handphone terlalu sering.</string>
+
+    <string-array name="opsi">
+        <item>Sangat setuju</item>
+        <item>Setuju</item>
+        <item>Agak setuju</item>
+        <item>Kurang setuju</item>
+        <item>Tidak setuju</item>
+        <item>Sangat tidak setuju</item>
+    </string-array>
+
+</resources>
