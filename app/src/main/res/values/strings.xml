@@ -12,7 +12,7 @@
     <string name="pertanyaangender">Silahkan masukan gender anda :</string>
     <string name="pria">Pria</string>
     <string name="wanita">Wanita</string>
-    
+
     <!--BAGIAN 3-->
     <string name="bg3no1">Saya kehilangan rencana aktivitas disebabkan oleh penggunaan smartphone / handphone.</string>
     <string name="bg3no2">Saya kesulitan konsentrasi menjalankan aktivitas sehari-hari, sedang melakukan tugas atau sedang bekerja disebabkan penggunaan smartphone / handphone.</string>
@@ -24,6 +24,8 @@
     <string name="bg3no8">Saya mengecek secara konstan smartphone / handphone saya.</string>
     <string name="bg3no9">Saya menggunakan smartphone / handphone lebih lama dari yang saya inginkan.</string>
     <string name="bg3no10">Orang-orang disekitar saya mengatakan bahwa saya menggunakan smartphone / handphone terlalu sering.</string>
+    <string name="ayah">Ayah</string>
+    <string name="kepemilikan_smartphone_handpone">Kepemilikan Smartphone/Handpone</string>
 
     <string-array name="opsi">
         <item>Sangat setuju</item>

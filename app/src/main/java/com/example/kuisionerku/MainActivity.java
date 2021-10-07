@@ -1,34 +1,26 @@
 package com.example.kuisionerku;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.cardview.widget.CardView;
 
-import android.animation.LayoutTransition;
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
-import android.transition.AutoTransition;
-import android.transition.TransitionManager;
 import android.util.Log;
 import android.view.View;
-import android.widget.LinearLayout;
+import android.widget.Button;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+public class MainActivity extends AppCompatActivity {
 
+    Button submit;
     int score1, score2, score3, score4, score5, score6, score7,
             score8, score9, score10, totalScore = 0;
 
     private RadioGroup radioGroup0, radioGroup1, radioGroup2, radioGroup3, radioGroup4,
             radioGroup5, radioGroup6, radioGroup7, radioGroup8, radioGroup9, radioGroup10;
-
-    private CardView cardView0, cardView1, cardView2, cardView3, cardView4, cardView5,
-            cardView6, cardView7, cardView8, cardView9, cardView10;
-
-    private LinearLayout linearLayout0, linearLayout1, linearLayout2, linearLayout3, linearLayout4, linearLayout5,
-            linearLayout6, linearLayout7, linearLayout8, linearLayout9, linearLayout10;
 
     private TextView scoreTotal;
     String hasilGender;
@@ -50,43 +42,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         radioGroup8 = findViewById(R.id.rg8);
         radioGroup9 = findViewById(R.id.rg9);
         radioGroup10 = findViewById(R.id.rg10);
-
-        cardView0 = findViewById(R.id.cv0);
-        cardView1 = findViewById(R.id.cv1);
-        cardView2 = findViewById(R.id.cv2);
-        cardView3 = findViewById(R.id.cv3);
-        cardView4 = findViewById(R.id.cv4);
-        cardView5 = findViewById(R.id.cv5);
-        cardView6 = findViewById(R.id.cv6);
-        cardView7 = findViewById(R.id.cv7);
-        cardView8 = findViewById(R.id.cv8);
-        cardView9 = findViewById(R.id.cv9);
-        cardView10 = findViewById(R.id.cv10);
-
-        linearLayout0 = findViewById(R.id.ll0);
-        linearLayout1 = findViewById(R.id.ll1);
-        linearLayout2 = findViewById(R.id.ll2);
-        linearLayout3 = findViewById(R.id.ll3);
-        linearLayout4 = findViewById(R.id.ll4);
-        linearLayout5 = findViewById(R.id.ll5);
-        linearLayout6 = findViewById(R.id.ll6);
-        linearLayout7 = findViewById(R.id.ll7);
-        linearLayout8 = findViewById(R.id.ll8);
-        linearLayout9 = findViewById(R.id.ll9);
-        linearLayout10 = findViewById(R.id.ll10);
-
-        cardView0.setOnClickListener(this);
-        cardView1.setOnClickListener(this);
-        cardView2.setOnClickListener(this);
-        cardView3.setOnClickListener(this);
-        cardView4.setOnClickListener(this);
-        cardView5.setOnClickListener(this);
-        cardView6.setOnClickListener(this);
-        cardView7.setOnClickListener(this);
-        cardView8.setOnClickListener(this);
-        cardView9.setOnClickListener(this);
-        cardView10.setOnClickListener(this);
-
 
         scoreTotal = findViewById(R.id.tvTotalScore);
 
@@ -444,90 +399,31 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         scoreTotal.setText(String.valueOf(totalScore));
 
         if (totalScore >= 31 && hasilGender == getString(R.string.pria)) {
-            Toast.makeText(getApplicationContext(), getString(R.string.tingkatkecanduantinggi), Toast.LENGTH_LONG).show();
+            Toast.makeText(getApplicationContext(), getString(R.string.tingkatkecanduantinggi), Toast.LENGTH_SHORT).show();
         }
         else if (totalScore < 31 && hasilGender == getString(R.string.pria)) {
-            Toast.makeText(getApplicationContext(), getString(R.string.tingkatkecanduanrendah), Toast.LENGTH_LONG).show();
+            Toast.makeText(getApplicationContext(), getString(R.string.tingkatkecanduanrendah), Toast.LENGTH_SHORT).show();
         }
         else if (totalScore >= 33 && hasilGender == getString(R.string.wanita)) {
-            Toast.makeText(getApplicationContext(), getString(R.string.tingkatkecanduantinggi), Toast.LENGTH_LONG).show();
+            Toast.makeText(getApplicationContext(), getString(R.string.tingkatkecanduantinggi), Toast.LENGTH_SHORT).show();
         }
         else if (totalScore < 33 && hasilGender == getString(R.string.wanita)) {
-            Toast.makeText(getApplicationContext(), getString(R.string.tingkatkecanduanrendah), Toast.LENGTH_LONG).show();
+            Toast.makeText(getApplicationContext(), getString(R.string.tingkatkecanduanrendah), Toast.LENGTH_SHORT).show();
         }
 
         else if (hasilGender == null) {
-            Toast.makeText(getApplicationContext(), getString(R.string.genderkosong), Toast.LENGTH_LONG).show();
+            Toast.makeText(getApplicationContext(), getString(R.string.genderkosong), Toast.LENGTH_SHORT).show();
         }
 
 
         Log.v("RESET BUTTON", "PASSED!");
+        Intent intent = new Intent(MainActivity.this, Data_keluarga.class);
+        startActivity(intent);
     }
 
     public void resetScore(View v) {
         totalScore = 0;
         scoreTotal.setText(String.valueOf(totalScore));
         Log.v("RESET BUTTON", "PASSED!");
-    }
-
-    @Override
-    public void onClick(View view) {
-        switch (view.getId()){
-            case R.id.cv0:
-                int a = (radioGroup0.getVisibility() == View.GONE)? View.VISIBLE: View.GONE;
-                TransitionManager.beginDelayedTransition(linearLayout0, new AutoTransition());
-                radioGroup0.setVisibility(a);
-                break;
-            case R.id.cv1:
-                int b = (radioGroup1.getVisibility() == View.GONE)? View.VISIBLE: View.GONE;
-                TransitionManager.beginDelayedTransition(linearLayout1, new AutoTransition());
-                radioGroup1.setVisibility(b);
-                break;
-            case R.id.cv2:
-                int c = (radioGroup2.getVisibility() == View.GONE)? View.VISIBLE: View.GONE;
-                TransitionManager.beginDelayedTransition(linearLayout2, new AutoTransition());
-                radioGroup2.setVisibility(c);
-                break;
-            case R.id.cv3:
-                int d = (radioGroup3.getVisibility() == View.GONE)? View.VISIBLE: View.GONE;
-                TransitionManager.beginDelayedTransition(linearLayout3, new AutoTransition());
-                radioGroup3.setVisibility(d);
-                break;
-            case R.id.cv4:
-                int e = (radioGroup4.getVisibility() == View.GONE)? View.VISIBLE: View.GONE;
-                TransitionManager.beginDelayedTransition(linearLayout4, new AutoTransition());
-                radioGroup4.setVisibility(e);
-                break;
-            case R.id.cv5:
-                int f = (radioGroup5.getVisibility() == View.GONE)? View.VISIBLE: View.GONE;
-                TransitionManager.beginDelayedTransition(linearLayout5, new AutoTransition());
-                radioGroup5.setVisibility(f);
-                break;
-            case R.id.cv6:
-                int g = (radioGroup6.getVisibility() == View.GONE)? View.VISIBLE: View.GONE;
-                TransitionManager.beginDelayedTransition(linearLayout6, new AutoTransition());
-                radioGroup6.setVisibility(g);
-                break;
-            case R.id.cv7:
-                int h = (radioGroup7.getVisibility() == View.GONE)? View.VISIBLE: View.GONE;
-                TransitionManager.beginDelayedTransition(linearLayout7, new AutoTransition());
-                radioGroup7.setVisibility(h);
-                break;
-            case R.id.cv8:
-                int i = (radioGroup8.getVisibility() == View.GONE)? View.VISIBLE: View.GONE;
-                TransitionManager.beginDelayedTransition(linearLayout8, new AutoTransition());
-                radioGroup8.setVisibility(i);
-                break;
-            case R.id.cv9:
-                int j = (radioGroup9.getVisibility() == View.GONE)? View.VISIBLE: View.GONE;
-                TransitionManager.beginDelayedTransition(linearLayout9, new AutoTransition());
-                radioGroup9.setVisibility(j);
-                break;
-            case R.id.cv10:
-                int k = (radioGroup10.getVisibility() == View.GONE)? View.VISIBLE: View.GONE;
-                TransitionManager.beginDelayedTransition(linearLayout10, new AutoTransition());
-                radioGroup10.setVisibility(k);
-                break;
-        }
     }
 }

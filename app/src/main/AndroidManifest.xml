@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.KuisionerKu">
         <activity
+            android:name=".Data_keluarga"
+            android:exported="true" />
+        <activity
+            android:name=".ExpandCardview"
+            android:exported="true" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
@@ -18,6 +24,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".Activity_List_keluarga"></activity>
     </application>
 
 </manifest>

@@ -3,9 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Android/KuisionerKu/app/src/main/res/layout/activity_main.xml" value="0.38822593476531425" />
-        <entry key="..\:/Android/KuisionerKu/app/src/main/res/layout/child_item.xml" value="0.1793478260869565" />
-        <entry key="..\:/Android/KuisionerKu/app/src/main/res/layout/group_item.xml" value="0.1793478260869565" />
+        <entry key="..\:/Android/KuisionerKu/app/src/main/res/layout/activity_data_keluarga.xml" value="0.264" />
+        <entry key="..\:/Android/KuisionerKu/app/src/main/res/layout/activity_expand_cardview.xml" value="0.23143115942028986" />
+        <entry key="..\:/Android/KuisionerKu/app/src/main/res/layout/activity_list_data_keluarga.xml" value="0.23143115942028986" />
+        <entry key="..\:/Android/KuisionerKu/app/src/main/res/layout/activity_main.xml" value="0.17300724637681159" />
+        <entry key="..\:/Android/KuisionerKu/app/src/main/res/layout/row_tambah_keluarga.xml" value="0.4" />
       </map>
     </option>
   </component>
