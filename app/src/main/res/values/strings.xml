@@ -36,4 +36,13 @@
         <item>Sangat tidak setuju</item>
     </string-array>
 
+<!--    <string-array name="opsi2">-->
+<!--        <item>Chatting, social media</item>-->
+<!--        <item>Games</item>-->
+<!--        <item>YouTube</item>-->
+<!--        <Item>Belanja online</Item>-->
+<!--        <Item>Mengerjakan tugas</Item>-->
+<!--        <Item>Bekerja</Item>-->
+<!--    </string-array>-->
+
 </resources>

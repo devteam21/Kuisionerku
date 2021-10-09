@@ -5,6 +5,7 @@ import java.io.Serializable;
 public class Calling_data_keluarga implements Serializable {
 
     public String cricketerName, teamName;
+    public boolean isSelected;
 
     public Calling_data_keluarga() {
     }
@@ -28,5 +29,13 @@ public class Calling_data_keluarga implements Serializable {
 
     public void setTeamName(String teamName) {
         this.teamName = teamName;
+    }
+
+    public boolean getSelected() {
+        return isSelected;
+    }
+
+    public void setSelected(boolean selected) {
+        isSelected = selected;
     }
 }

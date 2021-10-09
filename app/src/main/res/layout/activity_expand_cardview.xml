@@ -18,8 +18,7 @@
             android:orientation="vertical">
 
                 <LinearLayout
-                    android:layout_marginTop="10dp"
-                    android:id="@+id/cobak"
+
                     android:padding="10dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -31,7 +30,7 @@
                         android:orientation="vertical">
 
                         <TextView
-                            android:id="@+id/text_cricket_name"
+                            android:id="@+id/text_status_keluarga"
                             android:layout_gravity="center_vertical"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -39,12 +38,29 @@
                             android:textSize="22sp"
                             android:textColor="@color/black"
                             android:textStyle="bold"/>
+
                         <TextView
-                            android:id="@+id/text_status_keluarga"
+                            android:id="@+id/text_cricket_name"
+                            android:layout_gravity="center_vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:text="@string/kepemilikan_smartphone_handpone"
+                            android:textSize="14sp"/>
+
+                        <TextView
                             android:layout_gravity="center_vertical"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/kepemilikan_smartphone_handpone"
+                            android:textSize="11sp"/>
+
+                        <TextView
+                            android:id="@+id/text_output"
+                            android:layout_gravity="center_vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="DEBUG"
                             android:textSize="11sp"/>
                     </LinearLayout>
 
@@ -53,17 +69,18 @@
                         android:gravity="right"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content">
+
                         <CheckBox
                             android:focusable="false"
                             android:button="@drawable/custom_checked_category"
                             android:id="@+id/checkbox_expand"
                             android:layout_width="50dp"
-                            android:layout_height="50dp"/>
+                            android:layout_height="50dp" />
 
                     </LinearLayout>
                 </LinearLayout>
 
-            <!--        Halaman Expand-->
+            <!--Halaman Expand-->
             <LinearLayout
                 android:visibility="gone"
                 android:background="#FFF0C8"
@@ -72,7 +89,8 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/layout_expand"
                 android:orientation="vertical">
-                <!--            Pertanyaan 1-->
+
+                <!--Pertanyaan 1-->
                 <LinearLayout
                     android:orientation="horizontal"
                     android:layout_width="match_parent"
@@ -91,13 +109,15 @@
                         android:layout_height="wrap_content">
 
                         <CheckBox
+                            android:id="@+id/pil1"
                             android:button="@drawable/custom_checked_subcategory"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"/>
+
                     </LinearLayout>
                 </LinearLayout>
 
-                <!--             Pertanyaan 2-->
+                <!--Pertanyaan 2-->
                 <LinearLayout
                     android:layout_marginTop="10dp"
                     android:orientation="horizontal"
@@ -117,13 +137,14 @@
                         android:layout_height="wrap_content">
 
                         <CheckBox
+                            android:id="@+id/pil2"
                             android:button="@drawable/custom_checked_subcategory"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"/>
                     </LinearLayout>
                 </LinearLayout>
 
-                <!--             Pertanyaan 3-->
+                <!--Pertanyaan 3-->
                 <LinearLayout
                     android:layout_marginTop="10dp"
                     android:orientation="horizontal"
@@ -143,13 +164,14 @@
                         android:layout_height="wrap_content">
 
                         <CheckBox
+                            android:id="@+id/pil3"
                             android:button="@drawable/custom_checked_subcategory"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"/>
                     </LinearLayout>
                 </LinearLayout>
 
-                <!--             Pertanyaan 4-->
+                <!--Pertanyaan 4-->
                 <LinearLayout
                     android:layout_marginTop="10dp"
                     android:orientation="horizontal"
@@ -169,13 +191,14 @@
                         android:layout_height="wrap_content">
 
                         <CheckBox
+                            android:id="@+id/pil4"
                             android:button="@drawable/custom_checked_subcategory"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"/>
                     </LinearLayout>
                 </LinearLayout>
 
-                <!--             Pertanyaan 5-->
+                <!--Pertanyaan 5-->
                 <LinearLayout
                     android:layout_marginTop="10dp"
                     android:orientation="horizontal"
@@ -195,13 +218,14 @@
                         android:layout_height="wrap_content">
 
                         <CheckBox
+                            android:id="@+id/pil5"
                             android:button="@drawable/custom_checked_subcategory"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"/>
                     </LinearLayout>
                 </LinearLayout>
 
-                <!--             Pertanyaan 6-->
+                <!--Pertanyaan 6-->
                 <LinearLayout
                     android:layout_marginTop="10dp"
                     android:orientation="horizontal"
@@ -221,11 +245,14 @@
                         android:layout_height="wrap_content">
 
                         <CheckBox
+                            android:id="@+id/pil6"
                             android:button="@drawable/custom_checked_subcategory"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"/>
+
                     </LinearLayout>
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>
+
 </androidx.cardview.widget.CardView>

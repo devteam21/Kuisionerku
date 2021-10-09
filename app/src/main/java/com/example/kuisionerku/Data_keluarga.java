@@ -119,9 +119,9 @@ public class Data_keluarga extends AppCompatActivity implements View.OnClickList
 
         final View cricketView = getLayoutInflater().inflate(R.layout.row_tambah_keluarga, null, false);
 
-        EditText editText = (EditText)cricketView.findViewById(R.id.edit_cricketer_name);
-        AppCompatSpinner spinnerTeam = (AppCompatSpinner)cricketView.findViewById(R.id.spinner_team);
-        ImageView imageClose = (ImageView)cricketView.findViewById(R.id.image_remove);
+        EditText editText = cricketView.findViewById(R.id.edit_cricketer_name);
+        AppCompatSpinner spinnerTeam = cricketView.findViewById(R.id.spinner_team);
+        ImageView imageClose = cricketView.findViewById(R.id.image_remove);
 
         ArrayAdapter arrayAdapter = new ArrayAdapter(this,android.R.layout.simple_spinner_item,teamList);
         spinnerTeam.setAdapter(arrayAdapter);
