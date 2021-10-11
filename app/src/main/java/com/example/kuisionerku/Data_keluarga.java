@@ -39,8 +39,8 @@ public class Data_keluarga extends AppCompatActivity implements View.OnClickList
         selanjutnya.setOnClickListener(this);
 
 
-        teamList.add("Ayah");
-        teamList.add("Ibu");
+        teamList.add("AYAH");
+        teamList.add("IBU");
 
 
     }
@@ -132,7 +132,7 @@ public class Data_keluarga extends AppCompatActivity implements View.OnClickList
 
         if (layoutList.getChildCount() >= 3) {
 
-            teamList.add("Anak " + nilai++);
+            teamList.add("ANAK " + nilai++);
 
         }
 
@@ -144,7 +144,7 @@ public class Data_keluarga extends AppCompatActivity implements View.OnClickList
         layoutList.removeView(view);
 
 
-        teamList.remove("Anak " + --nilai);
+        teamList.remove("ANAK " + --nilai);
 
         if (nilai == 0) {
             nilai = 1;

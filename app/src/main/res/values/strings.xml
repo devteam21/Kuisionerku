@@ -1,12 +1,13 @@
 <resources>
     <string name="app_name">KuisionerKu</string>
-
-    <string name="nol">0</string>
     <string name="reset">Reset</string>
     <string name="submit">Submit</string>
     <string name="tingkatkecanduantinggi">Tingkat kecanduan tinggi</string>
     <string name="tingkatkecanduanrendah">Tingkat kecanduan rendah</string>
     <string name="genderkosong">Gender Kosong</string>
+
+    <string name="status">STATUS</string>
+    <string name="spinnertext">Rata-rata penggunaan smartphone</string>
 
     <!--GENDER-->
     <string name="pertanyaangender">Silahkan masukan gender anda :</string>
@@ -24,8 +25,10 @@
     <string name="bg3no8">Saya mengecek secara konstan smartphone / handphone saya.</string>
     <string name="bg3no9">Saya menggunakan smartphone / handphone lebih lama dari yang saya inginkan.</string>
     <string name="bg3no10">Orang-orang disekitar saya mengatakan bahwa saya menggunakan smartphone / handphone terlalu sering.</string>
-    <string name="ayah">Ayah</string>
+
     <string name="kepemilikan_smartphone_handpone">Kepemilikan Smartphone/Handpone</string>
+    <string name="kepemilikan_penggunaan"><![CDATA[Kepemilikan & Penggunaan]]></string>
+    <string name="smartphone_handphone">Smartphone / Handphone</string>
 
     <string-array name="opsi">
         <item>Sangat setuju</item>
@@ -36,13 +39,12 @@
         <item>Sangat tidak setuju</item>
     </string-array>
 
-<!--    <string-array name="opsi2">-->
-<!--        <item>Chatting, social media</item>-->
-<!--        <item>Games</item>-->
-<!--        <item>YouTube</item>-->
-<!--        <Item>Belanja online</Item>-->
-<!--        <Item>Mengerjakan tugas</Item>-->
-<!--        <Item>Bekerja</Item>-->
-<!--    </string-array>-->
+    <!--PILIHAN SUB STATUS 1-->
+    <string name="pilSubStat1">Chatting, social media</string>
+    <string name="pilSubStat2">Games</string>
+    <string name="pilSubStat3">Youtube</string>
+    <string name="pilSubStat4">Belanja online</string>
+    <string name="pilSubStat5">Mengerjakan tugas</string>
+    <string name="pilSubStat6">Bekerja</string>
 
 </resources>
